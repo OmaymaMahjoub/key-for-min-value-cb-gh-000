@@ -22,6 +22,7 @@ def key_for_min_value(name_hash)
           vm=v
           pos=i
         end
+        puts "4"
         i+=1
       end
       return arr1[p]
