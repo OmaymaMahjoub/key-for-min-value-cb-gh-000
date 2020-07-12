@@ -10,12 +10,11 @@ def key_for_min_value(name_hash)
         value
       end
       vm=value[0]
-      km=key[0]
       i=0
+      p=0
       value.each do |v|
         if vm>v
           vm=v
-          i+=1
         end
       end
       return key[i]
