@@ -6,8 +6,10 @@ def key_for_min_value(name_hash)
     return nil
   else
       name_hash.collect do |ke,val|
-        ke
         val
+      end
+      name_hash.collect do |ke,va|
+        ke
       end
       vm=val[0]
       i=0
