@@ -8,8 +8,8 @@ def key_for_min_value(name_hash)
       name_hash.collect do |ke,val|
         val
       end
-      name_hash.collect do |ke,va|
-        ke
+      name_hash.collect do |keyy,va|
+        keyy
       end
       vm=val[0]
       i=0
