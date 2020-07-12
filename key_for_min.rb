@@ -5,12 +5,18 @@ def key_for_min_value(name_hash)
   if name_hash.size==0
     return nil
   else
-    k=name_hash.keys[0]
-    v=name_hash.values[0]
-    name_hash.collect do |key,value|
-      if value<v
-        k=key
+      name_hash.collect do |key,value|
+        key
+        value
       end
+      vm=value[0]
+      km=key[0]
+      value.each do |v|
+        if vm>v
+          vm=v
+        end
+      end
+      return name_hash[vm]
     end
   end
   return k
