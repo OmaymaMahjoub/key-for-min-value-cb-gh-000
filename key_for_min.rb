@@ -8,19 +8,19 @@ def key_for_min_value(name_hash)
       arr1=Array.new
       arr2=Array.new
       name_hash.collect do |key,value|
-        key
-        value
+        arr1<<key
+        arr2<<value
       end
-      vm=value[0]
+      vm=arr2[0]
       i=0
-      p=0
-      value.each do |v|
+      pos=0
+      arr2.each do |v|
         if vm>v
           vm=v
-          p=i
+          pos=i
         end
         i+=1
       end
-      return key[p]
+      return arr1[p]
     end
 end
