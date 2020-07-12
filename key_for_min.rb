@@ -25,7 +25,7 @@ def key_for_min_value(name_hash)
         puts "4"
         i+=1
       end
-      return arr1[pos]
+      puts arr1[pos]
     end
 end
 ikea = {:chair => 25, :table => 85, :mattress => 450}
