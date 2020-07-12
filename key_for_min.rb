@@ -15,8 +15,10 @@ def key_for_min_value(name_hash)
       value.each do |v|
         if vm>v
           vm=v
+          p=i
         end
+        i+=1
       end
-      return key[i]
+      return key[p]
     end
 end
