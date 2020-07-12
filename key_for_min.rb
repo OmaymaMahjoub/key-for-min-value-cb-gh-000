@@ -5,22 +5,22 @@ def key_for_min_value(name_hash)
   if name_hash.size==0
     return nil
   else
-      name_hash.collect do |ke,val|
-        val
+      arr1=Array.new
+      arr2=Array.new
+      name_hash.collect do |key,value|
+        key
+        value
       end
-      name_hash.collect do |keyy,va|
-        keyy
-      end
-      vm=val[0]
+      vm=value[0]
       i=0
-      pos=0
-      val.each do |v|
+      p=0
+      value.each do |v|
         if vm>v
           vm=v
-          pos=i
+          p=i
         end
         i+=1
       end
-      return keyy[pos]
+      return key[p]
     end
 end
