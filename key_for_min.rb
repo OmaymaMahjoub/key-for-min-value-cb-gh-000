@@ -7,9 +7,9 @@ def key_for_min_value(name_hash)
   else
       arr1=Array.new
       arr2=Array.new
-      name_hash.collect do |key,value|
-        arr1<<key
-        arr2<<value
+      name_hash.collect do |k,v|
+        arr1.push(k)
+        arr2.push(v)
       end
       vm=arr2[0]
       i=0
